@@ -28,6 +28,6 @@ urlpatterns = [
     path('autor/', AutoresView.as_view(), name='autor'),
     path('editor/', EditorasView.as_view(), name='editora'),
     path('leitor/', LeitoresView.as_view(), name='leitor'),
-    path('genero/', GenerosView.as_view(), name='genero'),
+    path('genero/', GenerosView.as_view(),name='genero'),
 
 ]

@@ -14,7 +14,7 @@ class LivrosView(View):
 
 class EmprestimoView(View):
     def get(self, request, *args, **kwargs):
-        reservas = Emprestimo.objects.all()
+        reservas = EmprestimoView.objects.all()
         return render(request, 'reserva.html', {'reservas': reservas})
 
 class CidadesView(View):
@@ -41,3 +41,4 @@ class GenerosView(View):
     def get(self, request, *args, **kwargs):
         generos = Genero.objects.all()
         return render(request, 'genero.html', {'generos': generos})
+        
